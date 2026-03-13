@@ -65,13 +65,13 @@ Some files were removed from this repository because they are too large to keep 
 
 I provide the following files separately through Dropbox:
 
-(1)*generated.npz*
+(1) **generated.npz**
 
 Place it at: ```text pretrained/cifar10_ddpm_dxmi_T10/generated.npz ```
 
 This file is a packed *.npz* archive of generated CIFAR-10 samples.
 
-(2) *cifar10_train_png_pil.npz*
+(2) **cifar10_train_png_pil.npz**
 
 ```text
 ./cifar10_train_png_pil.npz
@@ -120,7 +120,6 @@ This command will:
 - generate CIFAR-10 samples
 
 - save generated PNG files under:
-- 
 ```text
 pretrained/cifar10_ddpm_dxmi_T10/generated
 ```
