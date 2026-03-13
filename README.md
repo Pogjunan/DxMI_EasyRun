@@ -80,7 +80,7 @@ This file is a packed *.npz* archive of generated CIFAR-10 samples.
 
 This file is a packed .npz archive of CIFAR-10 training images prepared for convenient reuse and evaluation-related workflows.
 
-4. Environment
+# 4. Environment
 
 Recommended environment:
 
