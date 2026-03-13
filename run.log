@@ -1,0 +1,92 @@
+Traceback (most recent call last):
+  File "/root/root/DxMI_Implement-main/generate_cifar10.py", line 122, in <module>
+    "datasets", f"{run_config.data.name}_train_png"
+                   ^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/omegaconf/dictconfig.py", line 355, in __getattr__
+    self._format_and_raise(
+    ~~~~~~~~~~~~~~~~~~~~~~^
+        key=key, value=None, cause=e, type_override=ConfigAttributeError
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/omegaconf/base.py", line 231, in _format_and_raise
+    format_and_raise(
+    ~~~~~~~~~~~~~~~~^
+        node=self,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        type_override=type_override,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/omegaconf/_utils.py", line 899, in format_and_raise
+    _raise(ex, cause)
+    ~~~~~~^^^^^^^^^^^
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/omegaconf/_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/omegaconf/dictconfig.py", line 351, in __getattr__
+    return self._get_impl(
+           ~~~~~~~~~~~~~~^
+        key=key, default_value=_DEFAULT_MARKER_, validate_key=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/omegaconf/dictconfig.py", line 442, in _get_impl
+    node = self._get_child(
+        key=key, throw_on_missing_key=True, validate_key=validate_key
+    )
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/omegaconf/basecontainer.py", line 73, in _get_child
+    child = self._get_node(
+        key=key,
+    ...<3 lines>...
+        throw_on_missing_key=throw_on_missing_key,
+    )
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/omegaconf/dictconfig.py", line 480, in _get_node
+    raise ConfigKeyError(f"Missing key {key!s}")
+omegaconf.errors.ConfigAttributeError: Missing key data
+    full_key: data
+    object_type=dict
+E0313 11:05:47.263000 206134 site-packages/torch/distributed/elastic/multiprocessing/api.py:984] failed (exitcode: 1) local_rank: 0 (pid: 206140) of binary: /root/miniconda3/envs/dxmi/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/torch/distributed/run.py", line 995, in <module>
+    main()
+    ~~~~^^
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/torch/distributed/run.py", line 991, in main
+    run(args)
+    ~~~^^^^^^
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/torch/distributed/run.py", line 982, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/miniconda3/envs/dxmi/lib/python3.14/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+    ...<2 lines>...
+    )
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+generate_cifar10.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-03-13_11:05:47
+  host      : 80cbebefcb09
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 206140)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
