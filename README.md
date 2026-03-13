@@ -64,7 +64,7 @@ DxMI_EasyRun/
 
 Some files were removed from this repository because they are too large to keep in a regular GitHub repository.
 
-I provide the following files separately through Dropbox:
+I provide the following files separately through Dropbox:https://drive.google.com/drive/folders/1XocMue67OgXwMPdcDTZQ61Wfj2ufHNd6?usp=drive_link
 
 (1) **generated.npz**
 
