@@ -10,7 +10,7 @@ This project is based on the official DxMI repository:
 
 - **Official DxMI repository**: https://github.com/swyoon/Diffusion-by-MaxEntIRL
 - **Paper**: *Maximum Entropy Inverse Reinforcement Learning of Diffusion Models with Energy-Based Models* 
-- **authour** : Sangwoong Yoon 
+- **Author** : Sangwoong Yoon 
 ---
 
 ## What is Different in This Repository?
