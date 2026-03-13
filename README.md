@@ -27,6 +27,7 @@ This repository is organized for **easy execution**.
 ## 1. Clone This Repository
 
 git clone https://github.com/Pogjunan/DxMI_EasyRun.git
+
 cd DxMI_EasyRun
 
 ## 2. Download Required Assets
